@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ✿✼:ﾟ:.｡.Everythings bout U.｡.:･ﾟﾟ･*</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            color: #333;
+        }
+        h1 {
+            color: #4682b4;
+            font-family: 'Script MT Bold', cursive, serif;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+            font-family: 'Blackadder ITC', cursive;
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+        input[type="text"], input[type="date"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 2px solid #4682b4;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #87CEEB;
+            color: #fff;
+            border: 2px solid #4682b4;
+            border-radius: 30px;
+            font-size: 16px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #6CC5E0;
+            border-color: #315f8c;
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>☁️ ✿✼:ﾟ:.｡.Everythings bout U.｡.:･ﾟﾟ･* ☁️</h1>
+    <div class="form-container">
+        <form action="/submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="birth">Date of Birth:</label>
+            <input type="date" id="birth" name="birth" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="hobbies">Hobbies:</label>
+            <textarea id="hobbies" name="hobbies" rows="3" placeholder="List your hobbies" required></textarea>
+
+            <label for="pet">Favorite Pet:</label>
+            <input type="text" id="pet" name="pet" placeholder="E.g., Cat, Dog" required>
+
+            <label for="drinks">Favorite Drink:</label>
+            <input type="text" id="drinks" name="drinks" placeholder="E.g., Coffee, Tea" required>
+
+            <label for="song">Favorite Song:</label>
+            <input type="text" id="song" name="song" placeholder="Your favorite song" required>
+
+            <label for="sports">Favorite Sport:</label>
+            <input type="text" id="sports" name="sports" placeholder="Your favorite sport" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
